@@ -3,8 +3,9 @@ let listaAmigos = [];
 function adicionarAmigo(){
     let input = document.getElementById("amigo").value;
     
-    if(input==''){
-        alert('Por favor, insira um nome.');
+    if(input=='' || input.length<3){
+        alert('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
+        limparInput();
         return;
     }
 
@@ -37,7 +38,7 @@ function sortearAmigo(){
     let amigoSorteado = listaAmigos[numeroAleatorio];
 
     let resultado = document.getElementById("resultado");
-    resultado.innerHTML = amigoSorteado;
+    resultado.innerHTML = `A pessoa sorteada foi: ${amigoSorteado}`;
 
     listaAmigos.splice(numeroAleatorio, 1);
     atualizaLista();
