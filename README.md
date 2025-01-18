@@ -1,7 +1,7 @@
 # Alura - One Challenge: Amigo Secreto
 
 Este é um projeto simples que permite criar uma lista de amigos, realizar sorteios e exibir o resultado do sorteio. A aplicação garante que apenas nomes válidos (com mais de 3 caracteres) sejam adicionados à lista. Após o sorteio, o nome da pessoa sorteada é removido da lista e o sorteio pode ser feito novamente.
-Foi disponibilizado os arquivos HTML e CSS para que fossse possível implementar apenas a lógica e a interação do usuário com os elementos na tela.
+Foi disponibilizado os arquivos **HTML** e **CSS** para que fossse possível implementar apenas a lógica e a interação do usuário com os elementos na tela.
 
 ## Funcionalidades
 
@@ -11,12 +11,7 @@ Foi disponibilizado os arquivos HTML e CSS para que fossse possível implementar
 
 ## Instalação
 
-Este é um projeto baseado em HTML, CSS e JavaScript. Não é necessário instalar nenhum servidor ou dependência adicional. Para rodar a aplicação, basta seguir os seguintes passos:
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/sorteio-amigo-secreto.git
-   ```
+Este é um projeto baseado em HTML, CSS e JavaScript. Não é necessário instalar nenhum servidor ou dependência adicional. Para rodar a aplicação, basta clonar o repositório em sua máquina e testar.
 
 ## Uso
 
