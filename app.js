@@ -22,8 +22,23 @@ function atualizaLista(){
     for(let i = 0; i < listaAmigos.length; i++){
         let item = document.createElement("li");
         item.textContent = listaAmigos[i];
+        item.setAttribute('data-index', i);
+        item.onclick = function(){selecionarAmigo(item)};
         lista.appendChild(item);
     }
+}
+
+function selecionarAmigo(item){
+    item.classList.toggle('selecionado');
+}
+
+function removerSelecionados(){
+    listaAmigos = listaAmigos.filter((amigo, index) =>{
+        let item = document.querySelector(`li[data-index="${index}"]`)
+        return !item.classList.contains('selecionado');
+    });
+
+    atualizaLista();
 }
 
 function sortearAmigo(){

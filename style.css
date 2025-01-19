@@ -160,3 +160,9 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.selecionado {
+    background-color: #f0f0f0; /* Destaque a seleção com uma cor de fundo */
+    border: 2px solid #22D4FD; /* Cor de borda para indicar seleção */
+    cursor: pointer; /* Indica que o item pode ser clicado */
+}
