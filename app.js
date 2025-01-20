@@ -49,7 +49,7 @@ function selecionarAmigo(item){
 function removerSelecionados(){
     let itensSelecionados = document.querySelectorAll('li.selecionado');
     if(itensSelecionados.length===0){
-        exibirMensagem('Nenhum nome selecionado para remover!');
+        exibirMensagem('Nada para remover!');
         return;
     }
 
@@ -76,6 +76,10 @@ function sortearAmigo(){
 
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `A pessoa sorteada foi: ${amigoSorteado}`;
+
+    setTimeout(() => {
+        resultado.innerHTML = '';
+    }, 5000);
 
     listaAmigos.splice(numeroAleatorio, 1);
     atualizaLista();
@@ -108,13 +112,12 @@ function verificarInput() {
     let botao = buttonAdd;
 
     if (inputNome.value.length >= 2 && inputNome.value !== '') {
-        // Se o nome for válido (mais de 2 caracteres e não vazio), muda a cor do botão para verde
+        
         buttonAdd.style.backgroundColor = 'green';
         buttonAdd.style.color = 'white';
     } else {
-        // Se o nome for inválido, o botão fica cinza
-        buttonAdd.style.backgroundColor = '#C4C4C4'; // Cor cinza
-        buttonAdd.style.color = '#444'; // Cor de texto padrão
+        buttonAdd.style.backgroundColor = '#C4C4C4'; 
+        buttonAdd.style.color = '#444';
     }
 }
 

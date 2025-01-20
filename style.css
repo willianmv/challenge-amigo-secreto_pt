@@ -173,7 +173,9 @@ ul {
 .button-resetar-lista{
     color: var(--color-white);
     background-color: var(--color-button);
+    display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 10px 40px;
     font-size: 16px;
@@ -197,7 +199,7 @@ ul {
 }
 
 #msg {
-    background-color: var(--color-primary);
+    background-color: var(--color-button);
     color: var(--color-secondary);
     font-family: "Inter", sans-serif;
     font-size: 16px;
