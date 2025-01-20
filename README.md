@@ -26,7 +26,7 @@ Este é um projeto construído em HTML, CSS e JavaScript. Não é necessário in
 ## Tecnologias Usadas
 
 - **HTML**: Para a estrutura da página.
-- **CSS**: Para o estilo visual (se aplicável).
+- **CSS**: Para o estilo visual.
 - **JavaScript**: Para a lógica de adicionar amigos, realizar sorteios, manipular a interface e realizar validações.
 
 ## Como Funciona
