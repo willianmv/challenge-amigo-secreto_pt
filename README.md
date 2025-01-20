@@ -48,10 +48,13 @@ Este é um projeto construído em HTML, CSS e JavaScript. Não é necessário in
 ## Exemplos
 
 1. **Adicionar um amigo**: Digite o nome "Pedro" no campo de entrada e clique em "Adicionar Amigo". O nome será adicionado à lista se tiver 2 ou mais caracteres.
+
 ![Imagem adicionando nome](https://github.com/willianmv/challenge-amigo-secreto_pt/blob/779f21f646ea0a4c2cf7a0939abbc3c45380c8df/adicionarNome.png)
+
+
 2. **Realizar o sorteio**: Após adicionar alguns amigos, clique em "Sortear Amigo". O nome sorteado será exibido na tela por 5 segundos e removido da lista.
-4. **Remover amigos selecionados**: Clique em um ou mais nomes na lista para selecioná-los. Depois, clique em "Remover Selecionados" para excluí-los.
-5. **Resetar lista**: Após o sorteio, clique em "Resetar Lista" para remover todos os amigos da lista e recomeçar o processo.
+3. **Remover amigos selecionados**: Clique em um ou mais nomes na lista para selecioná-los. Depois, clique em "Remover Selecionados" para excluí-los.
+4. **Resetar lista**: Após o sorteio, clique em "Resetar Lista" para remover todos os amigos da lista e recomeçar o processo.
 
 ## Mensagens de Erro
 
