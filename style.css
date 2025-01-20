@@ -170,6 +170,18 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+.button-resetar-lista{
+    color: var(--color-white);
+    background-color: var(--color-button);
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+.button-resetar-lista:hover {
+    background-color: var(--color-button-hover);
+}
+
 .button-draw img {
     margin-right: 40px;
 }

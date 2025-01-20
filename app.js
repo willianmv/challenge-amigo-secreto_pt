@@ -1,26 +1,31 @@
 //Cria array que armazena o nome dos amigos
 let listaAmigos = [];
+const inputNome = document.getElementById('amigo');
+const listaHTML = document.getElementById('listaAmigos');
+const buttonAdd = document.querySelector(".button-add");
 
 //Adiciona nomes a lista se forem maiores que 2 caracteres
 function adicionarAmigo(){
-    let input = document.getElementById("amigo").value;
+    let input = inputNome.value;
     
     if(input=='' || input.length<2){
         exibirMensagem('Por favor, insira um nome válido. (Mínimo de 2 caracteres)');
         limparInput();
         return;
     }
-
+    
     listaAmigos.push(input);
     atualizaLista();
     limparInput();
     console.log(listaAmigos);
+
+    buttonAdd.style.backgroundColor = '#C4C4C4';
+    buttonAdd.style.color = '#444'; 
 }
 
 //Pega o elemento html da lista e atualiza com base no array
 function atualizaLista(){
-    let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = '';
+    listaHTML.innerHTML = '';
 
     for(let i = 0; i < listaAmigos.length; i++){
         //Cria uma li dentro do elemento ul
@@ -31,7 +36,7 @@ function atualizaLista(){
         item.setAttribute('data-index', i);
         //Ao clicar num nome, chama a função que deixa o item marcado como selecionado
         item.onclick = function(){selecionarAmigo(item)};
-        lista.appendChild(item);
+        listaHTML.appendChild(item);
     }
 }
 
@@ -96,6 +101,21 @@ function resetarLista(){
     });
 
     removerSelecionados();
+}
+
+//Altera o botao para validar o input assim que os dados sao inseridos
+function verificarInput() {
+    let botao = buttonAdd;
+
+    if (inputNome.value.length >= 2 && inputNome.value !== '') {
+        // Se o nome for válido (mais de 2 caracteres e não vazio), muda a cor do botão para verde
+        buttonAdd.style.backgroundColor = 'green';
+        buttonAdd.style.color = 'white';
+    } else {
+        // Se o nome for inválido, o botão fica cinza
+        buttonAdd.style.backgroundColor = '#C4C4C4'; // Cor cinza
+        buttonAdd.style.color = '#444'; // Cor de texto padrão
+    }
 }
 
 //Limpa o campo
