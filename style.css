@@ -179,19 +179,19 @@ ul {
 }
 
 .selecionado {
-    background-color: #f0f0f0; /* Destaque a seleção com uma cor de fundo */
-    border: 2px solid #22D4FD; /* Cor de borda para indicar seleção */
-    cursor: pointer; /* Indica que o item pode ser clicado */
+    background-color: #f0f0f0;
+    border: 2px solid #22D4FD;
+    cursor: pointer; 
 }
 
 #msg {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     font-family: "Inter", sans-serif;
     font-size: 16px;
     padding: 10px;
     margin-top: 20px;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    display: none; /* Inicialmente escondido */
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+    display: none; 
 }

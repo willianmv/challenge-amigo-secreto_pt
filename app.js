@@ -4,7 +4,6 @@ function adicionarAmigo(){
     let input = document.getElementById("amigo").value;
     
     if(input=='' || input.length<3){
-        // alert('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
         exibirMensagem('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
         limparInput();
         return;
@@ -51,7 +50,6 @@ function removerSelecionados(){
 
 function sortearAmigo(){
     if(listaAmigos.length===0){
-        // alert('Adicione amigos à lista para realizar o sorteio!');
         exibirMensagem('Adicione amigos à lista para realizar o sorteio!');
         return;
     }
