@@ -87,6 +87,17 @@ function exibirMensagem(mensagem){
     }, 3000);
 }
 
+//Caso queria sortear apenas um nome, assim que ele for sorteado, pode resetar a lista e recomecar
+function resetarLista(){
+    // Marca todos os itens da lista como selecionados
+    let itens = document.querySelectorAll("#listaAmigos li");
+    itens.forEach(item => {
+        item.classList.add("selecionado"); 
+    });
+
+    removerSelecionados();
+}
+
 //Limpa o campo
 function limparInput(){
     let input = document.getElementById("amigo");
