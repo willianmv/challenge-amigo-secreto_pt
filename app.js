@@ -4,7 +4,8 @@ function adicionarAmigo(){
     let input = document.getElementById("amigo").value;
     
     if(input=='' || input.length<3){
-        alert('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
+        // alert('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
+        exibirMensagem('Por favor, insira um nome válido. (Mínimo de 3 caracteres)');
         limparInput();
         return;
     }
@@ -33,17 +34,25 @@ function selecionarAmigo(item){
 }
 
 function removerSelecionados(){
+    let itensSelecionados = document.querySelectorAll('li.selecionado');
+    if(itensSelecionados.length===0){
+        exibirMensagem('Nenhum nome selecionado para remover!');
+        return;
+    }
+
     listaAmigos = listaAmigos.filter((amigo, index) =>{
         let item = document.querySelector(`li[data-index="${index}"]`)
         return !item.classList.contains('selecionado');
     });
 
     atualizaLista();
+    exibirMensagem('Nomes selecionados foram removidos');
 }
 
 function sortearAmigo(){
     if(listaAmigos.length===0){
-        alert('Adicione amigos à lista para realizar o sorteio!');
+        // alert('Adicione amigos à lista para realizar o sorteio!');
+        exibirMensagem('Adicione amigos à lista para realizar o sorteio!');
         return;
     }
 
@@ -57,6 +66,16 @@ function sortearAmigo(){
 
     listaAmigos.splice(numeroAleatorio, 1);
     atualizaLista();
+}
+
+function exibirMensagem(mensagem){
+    let divMensagem = document.getElementById('msg');
+    divMensagem.textContent = mensagem;
+    divMensagem.style.display = 'block';
+
+    setTimeout(() => {
+        divMensagem.style.display = 'none';
+    }, 3000);
 }
 
 function limparInput(){

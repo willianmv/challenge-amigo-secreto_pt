@@ -136,10 +136,13 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Botão de sortear título */
@@ -151,6 +154,20 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+}
+
+.button-remover-selecionados{
+    color: var(--color-white);
+    background-color: var(--color-button);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+
+.button-remover-selecionados:hover {
+    background-color: var(--color-button-hover);
 }
 
 .button-draw img {
@@ -165,4 +182,16 @@ ul {
     background-color: #f0f0f0; /* Destaque a seleção com uma cor de fundo */
     border: 2px solid #22D4FD; /* Cor de borda para indicar seleção */
     cursor: pointer; /* Indica que o item pode ser clicado */
+}
+
+#msg {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    display: none; /* Inicialmente escondido */
 }
