@@ -26,7 +26,7 @@ Este é um projeto construído em HTML, CSS e JavaScript. Não é necessário in
 ## Tecnologias Usadas
 
 - **HTML**: Para a estrutura da página.
-- **CSS**: Para o estilo visual (se aplicável).
+- **CSS**: Para o estilo visual.
 - **JavaScript**: Para a lógica de adicionar amigos, realizar sorteios, manipular a interface e realizar validações.
 
 ## Como Funciona
@@ -47,10 +47,23 @@ Este é um projeto construído em HTML, CSS e JavaScript. Não é necessário in
 
 ## Exemplos
 
-1. **Adicionar um amigo**: Digite o nome "Carlos" no campo de entrada e clique em "Adicionar Amigo". O nome será adicionado à lista se tiver 2 ou mais caracteres.
-2. **Realizar o sorteio**: Após adicionar alguns amigos, clique em "Sortear Amigo". O nome sorteado será exibido na tela por 5 segundos e removido da lista.
+1. **Adicionar um amigo**: Digite o nome "Pedro" no campo de entrada e clique em "Adicionar Amigo". O nome será adicionado à lista se tiver dois ou mais caracteres.
+
+![Imagem adicionando nome](https://github.com/willianmv/challenge-amigo-secreto_pt/blob/779f21f646ea0a4c2cf7a0939abbc3c45380c8df/adicionarNome.png)
+
+
+2. **Realizar o sorteio**: Após adicionar alguns amigos, clique em "Sortear Amigo". O nome sorteado será exibido na tela por cinco segundos e removido da lista.
+
+![Imagem sorteio ](https://github.com/willianmv/challenge-amigo-secreto_pt/blob/9cb843d49dcb6751b848b7464521724202f93164/sorteio.png)
+
 3. **Remover amigos selecionados**: Clique em um ou mais nomes na lista para selecioná-los. Depois, clique em "Remover Selecionados" para excluí-los.
+
+![Imagem removendo ](https://github.com/willianmv/challenge-amigo-secreto_pt/blob/9cb843d49dcb6751b848b7464521724202f93164/removendoSelecionados.png)
+
 4. **Resetar lista**: Após o sorteio, clique em "Resetar Lista" para remover todos os amigos da lista e recomeçar o processo.
+
+![Imagem resetando ](https://github.com/willianmv/challenge-amigo-secreto_pt/blob/9cb843d49dcb6751b848b7464521724202f93164/resetandoLista.png)
+
 
 ## Mensagens de Erro
 
