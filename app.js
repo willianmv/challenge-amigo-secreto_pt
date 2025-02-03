@@ -77,6 +77,12 @@ function sortearAmigo(){
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `A pessoa sorteada foi: ${amigoSorteado}`;
 
+    confetti({
+        particleCount: 250,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+
     setTimeout(() => {
         resultado.innerHTML = '';
     }, 5000);
